@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "486770306259",
+    "firebase_url": "https://fin-inc-cds-inventory-20.firebaseio.com",
+    "project_id": "fin-inc-cds-inventory-20",
+    "storage_bucket": "fin-inc-cds-inventory-20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486770306259:android:7b8f39d0690d5a28c77826",
+        "android_client_info": {
+          "package_name": "com.icdatinnovations.finIncInventory20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486770306259-lf446inil2tokusv7fr36ulr143vnf8d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.icdatinnovations.finIncInventory20",
+            "certificate_hash": "35a7de7f844c9b3817d4f98afe7048aeb8437cef"
+          }
+        },
+        {
+          "client_id": "486770306259-iu387p32qsdjpeum5kp90956n0cuqncl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1rs_gQK08Erdwu3tkt6SpxMVse-g5zy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486770306259-iu387p32qsdjpeum5kp90956n0cuqncl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
