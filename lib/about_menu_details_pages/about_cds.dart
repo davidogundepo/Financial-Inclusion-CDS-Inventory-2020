@@ -12,26 +12,23 @@ String cdsName = "Financial Inclusion CDS";
 String aboutCDS = "About $cdsName";
 
 String visionTitle = "OUR VISION STATEMENT";
-String visionStatement = "Raising the total Nigerian youth through comprehensive education.";
+String visionStatement = "The vision is to ensure all Nigeria adult from the age of 18+ to be financially included.";
 String missionTitle = "OUR MISSION STATEMENT";
-String missionStatement = "Mobilizing Academic, Moral, Social, Political and Religious tools, by dedicated and vision driven educators in a proactive environment of teaching and learning, which is geared towards impacting and equipping our corp members to be THE TOTAL NIGERIAN YOUTH the world will be proud of.";
+String missionStatement = "The mission is to enable all Nigeria adult to access financial products and services.";
 
 String coreValues = "OUR CORE VALUES";
-String cvStatement1 = "1. We are dedicated to the success of your ward\n\n";
-String cvStatement2 = "2. We teach academics as well as morals\n\n";
-String cvStatement3 = "3. We are genuinely interested in deploying the full capacity of your ward.\n\n";
-String cvStatement4 = "4. We create a social atmosphere for corpers and we believe every youth can excel.";
+String cvStatement1 = "Our core value bin financial inclusion CDS is Service to host community\n\n Our obligations and responsibilities are to give financial education to individuals and the broader community. \n\nFinancial freedom is our core value.";
 
 String whyCDSGroup = "WHY $cdsName?".toUpperCase();
-String whyCDSGroupStatement = "$cdsName was established on the 3rd of October 1974 out of the vision and passion of President David Oludepo to empower today’s youth for tomorrows challenges.\n\nWe offer students (both domestic and international) the opportunity to earn an unparalleled high-quality educational experience. With passionate and  qualified teaching staff, a clean and caring school atmosphere, and the resources to supply students with the skills necessary for their continued personal success, our school looks to help students to realize their potential.";
+String whyCDSGroupStatement = "$cdsName in Obia/Akpor LGA was founded in 2019. \n\nFinancial literacy is crucial for every individual to help ensure that people save enough to provide an adequate income in retirement while avoiding high levels of debt that might result to bankruptcy and foreclosure. \n\nWe reached out to kids in secondary schools and educate the pupils on Financial literacy. Some topics of discussion includes; \n\n1. Financial budgeting and planning 2. Savings 3. Records keeping 4. Risk management.\n\nThe children were sensitized on the core needs of saving for tomorrow. We expanded our outreach to traders in the market environment, which includes Rumuomasi market, Rumuokoro market, Rukpokwu market. We also sensitized them on ways of saving example daily savings which are operated by small-medium business owners otherwise known as 'Akawo'. We also educated them on the crucial needs for group savings, and bank savings. As a good number of them doesn't know the importance of budgeting or setting a financial goal for their business, we sensitized them on the needs of financial budgeting and planning.";
 String cdsBody = "Financial Inclusion CDS Body\n\n";
-String cdsBodyStatement = "We currently have 54 corp members in $cdsName, 31 male corpers and 22 female corpers. 13 corp members have graduated from $cdsName.";
+String cdsBodyStatement = "We currently have 102 corp members in $cdsName, 37 male corpers and 65 female corpers. 3 corp members have graduated from $cdsName.";
 String cdsPopulationChart = "$cdsName Corp Members Population Chart";
 
-String schoolAchievements = "Some of our achievements";
+String schoolAchievements = "Some of our achievements and outreaches";
 
-double maleCDSCorperPopulation = 31;
-double femaleCDSCorperPopulation = 22;
+double maleCDSCorperPopulation = 37;
+double femaleCDSCorperPopulation = 65;
 
 
 Color backgroundColor = Colors.blueGrey[900];
@@ -68,8 +65,8 @@ class _AboutCDS extends State<AboutCDS> {
     AchievementsNotifier achievementsNotifier = Provider.of<AchievementsNotifier>(context, listen: false);
     getAchievements(achievementsNotifier);
 
-    cdsCorperMap.putIfAbsent("Male Corp Members", () => 31);
-    cdsCorperMap.putIfAbsent("Female Corp Members", () => 22);
+    cdsCorperMap.putIfAbsent("Male Corp Members", () => 37);
+    cdsCorperMap.putIfAbsent("Female Corp Members", () => 65);
 
     super.initState();
   }
@@ -218,30 +215,6 @@ class _AboutCDS extends State<AboutCDS> {
                                   children: <TextSpan>[
                                     TextSpan(
                                       text: cvStatement1,
-                                      style: TextStyle(
-                                        fontSize: 20,
-                                        color: cardTextColor,
-                                        fontWeight: FontWeight.w400,
-                                      ),
-                                    ),
-                                    TextSpan(
-                                      text: cvStatement2,
-                                      style: TextStyle(
-                                        fontSize: 20,
-                                        color: cardTextColor,
-                                        fontWeight: FontWeight.w400,
-                                      ),
-                                    ),
-                                    TextSpan(
-                                      text: cvStatement3,
-                                      style: TextStyle(
-                                        fontSize: 20,
-                                        color: cardTextColor,
-                                        fontWeight: FontWeight.w400,
-                                      ),
-                                    ),
-                                    TextSpan(
-                                      text: cvStatement4,
                                       style: TextStyle(
                                         fontSize: 20,
                                         color: cardTextColor,
@@ -465,7 +438,8 @@ class _AboutCDS extends State<AboutCDS> {
                     ],
                   );
                 },
-                itemWidth: 350,
+                layout: SwiperLayout.STACK,
+                itemWidth: MediaQuery.of(context).size.width * 0.90,
               ),
 
             ),
