@@ -174,22 +174,26 @@ class _LGOfficialsDetailsPageState extends State<LGOfficialsDetailsPage> {
                     child: Padding(
                       padding: const EdgeInsets.only(
                           left: 16.0, top: 16.0, right: 16.0, bottom: 16.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: <Widget>[
-                          Text(
-                            lgOfficialsNotifier.currentLGOfficials.name.toUpperCase(),
-                            style: GoogleFonts.blinker(
-                                color: Color.fromRGBO(167, 119, 29, 1),
-                                fontSize: 30,
-                                fontWeight: FontWeight.w500),
-                          ),
-                          SizedBox(width: 10),
-                          Icon(
-                            MdiIcons.checkboxMarkedCircle,
-                            color: Color.fromRGBO(167, 119, 29, 1),
-                          ),
-                        ],
+
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Text(
+                              lgOfficialsNotifier.currentLGOfficials.name.toUpperCase(),
+                              style: GoogleFonts.blinker(
+                                  color: Color.fromRGBO(167, 119, 29, 1),
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.w500),
+                            ),
+                            SizedBox(width: 10),
+                            Icon(
+                              MdiIcons.checkboxMarkedCircle,
+                              color: Color.fromRGBO(167, 119, 29, 1),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),

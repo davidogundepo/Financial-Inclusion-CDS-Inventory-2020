@@ -213,39 +213,42 @@ class _BatchCStreamTwoDetailsPageState extends State<BatchCStreamTwoDetailsPage>
                           right: 16.0,
                           bottom: 16.0),
 
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: <Widget>[
-                          Text(batchCStreamTwoNotifier.currentBatchCStreamTwo.name.toUpperCase(),
-                            style: GoogleFonts.blinker(
-                                color: Color.fromRGBO(95, 65, 128, 1),
-                                fontSize: 30,
-                                fontWeight: FontWeight.w500
-                            ),
-                          ),
-                          (() {
-                            if (batchCStreamTwoNotifier.currentBatchCStreamTwo.cdsExecutive == "Yes") {
-                              return
-                                Row(
-                                  children: <Widget>[
-                                    SizedBox(width: 10),
-                                    Icon (
-                                      MdiIcons.checkboxMarkedCircle,
-                                      color: Color.fromRGBO(95, 65, 128, 1),
-                                    ),
-                                  ],
-                                );
-                            } else {
-                              return Visibility(
-                                visible: !_isVisible,
-                                child: Icon (
-                                  MdiIcons.checkboxMarkedCircle,
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Text(batchCStreamTwoNotifier.currentBatchCStreamTwo.name.toUpperCase(),
+                              style: GoogleFonts.blinker(
                                   color: Color.fromRGBO(95, 65, 128, 1),
-                                ),
-                              );
-                            }
-                          }()),
-                        ],
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.w500
+                              ),
+                            ),
+                            (() {
+                              if (batchCStreamTwoNotifier.currentBatchCStreamTwo.cdsExecutive == "Yes") {
+                                return
+                                  Row(
+                                    children: <Widget>[
+                                      SizedBox(width: 10),
+                                      Icon (
+                                        MdiIcons.checkboxMarkedCircle,
+                                        color: Color.fromRGBO(95, 65, 128, 1),
+                                      ),
+                                    ],
+                                  );
+                              } else {
+                                return Visibility(
+                                  visible: !_isVisible,
+                                  child: Icon (
+                                    MdiIcons.checkboxMarkedCircle,
+                                    color: Color.fromRGBO(95, 65, 128, 1),
+                                  ),
+                                );
+                              }
+                            }()),
+                          ],
+                        ),
                       ),
                     ),
                   ),

@@ -207,39 +207,43 @@ class _BatchAStreamOneDetailsPageState extends State<BatchAStreamOneDetailsPage>
                           right: 16.0,
                           bottom: 16.0),
 
-                      child: Row(
                         mainAxisSize: MainAxisSize.min,
-                        children: <Widget>[
-                          Text(batchAStreamOneNotifier.currentBatchAStreamOne.name.toUpperCase(),
-                            style: GoogleFonts.blinker(
-                                color: Color.fromRGBO(189, 150, 176, 1),
-                                fontSize: 30,
-                                fontWeight: FontWeight.w500
-                            ),
-                          ),
-                          (() {
-                            if (batchAStreamOneNotifier.currentBatchAStreamOne.cdsExecutive == "Yes") {
-                              return
-                                Row(
-                                  children: <Widget>[
-                                    SizedBox(width: 10),
-                                    Icon (
-                                      MdiIcons.checkboxMarkedCircle,
-                                      color: Color.fromRGBO(189, 150, 176, 1),
-                                    ),
-                                  ],
-                                );
-                            } else {
-                              return Visibility(
-                                visible: !_isVisible,
-                                child: Icon (
-                                  MdiIcons.checkboxMarkedCircle,
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Text(batchAStreamOneNotifier.currentBatchAStreamOne.name.toUpperCase(),
+                              style: GoogleFonts.blinker(
                                   color: Color.fromRGBO(189, 150, 176, 1),
-                                ),
-                              );
-                            }
-                          }()),
-                        ],
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.w500
+                              ),
+                            ),
+                            (() {
+                              if (batchAStreamOneNotifier.currentBatchAStreamOne.cdsExecutive == "Yes") {
+                                return
+                                  Row(
+                                    children: <Widget>[
+                                      SizedBox(width: 10),
+                                      Icon (
+                                        MdiIcons.checkboxMarkedCircle,
+                                        color: Color.fromRGBO(189, 150, 176, 1),
+                                      ),
+                                    ],
+                                  );
+                              } else {
+                                return Visibility(
+                                  visible: !_isVisible,
+                                  child: Icon (
+                                    MdiIcons.checkboxMarkedCircle,
+                                    color: Color.fromRGBO(189, 150, 176, 1),
+                                  ),
+                                );
+                              }
+                            }()),
+                          ],
+                        ),
                       ),
                     ),
                   ),

@@ -19,7 +19,7 @@ String subtitle = "Obia/Akpor LG CDS GROUP";
 
 String batchBStreamOneTitle = "Batch B Stream One Corpers";
 String batchBStreamTwoTitle = "Batch B Stream Two Corpers";
-String batchCStreamOneTitle = "Batch C Stream One One Corpers";
+String batchCStreamOneTitle = "Batch C Stream One Corpers";
 String batchCStreamTwoTitle = "Batch C Stream Two Corpers";
 String batchAStreamOneTitle = "Batch A Stream One Corpers";
 String executiveCDSCorpersTitle = "Executive CDS Corpers";

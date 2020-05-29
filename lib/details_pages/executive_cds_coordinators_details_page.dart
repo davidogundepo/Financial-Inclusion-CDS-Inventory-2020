@@ -120,22 +120,25 @@ class _ExecutiveCDSCoordinatorsDetailsPageState extends State<ExecutiveCDSCoordi
                           right: 16.0,
                           bottom: 16.0),
 
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: <Widget>[
-                          Text(executiveCDSCoordinatorsNotifier.currentExecutiveCDSCoordinators.name.toUpperCase(),
-                            style: GoogleFonts.blinker(
-                                color: Colors.white,
-                                fontSize: 30,
-                                fontWeight: FontWeight.w500
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Text(executiveCDSCoordinatorsNotifier.currentExecutiveCDSCoordinators.name.toUpperCase(),
+                              style: GoogleFonts.blinker(
+                                  color: Colors.white,
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.w500
+                              ),
                             ),
-                          ),
-                          SizedBox(width: 10),
-                          Icon (
-                            MdiIcons.checkboxMarkedCircle,
-                            color: Colors.white,
-                          ),
-                        ],
+                            SizedBox(width: 10),
+                            Icon (
+                              MdiIcons.checkboxMarkedCircle,
+                              color: Colors.white,
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
