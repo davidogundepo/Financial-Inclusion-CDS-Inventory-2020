@@ -207,7 +207,6 @@ class _BatchAStreamOneDetailsPageState extends State<BatchAStreamOneDetailsPage>
                           right: 16.0,
                           bottom: 16.0),
 
-                        mainAxisSize: MainAxisSize.min,
                       child: SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
                         child: Row(
